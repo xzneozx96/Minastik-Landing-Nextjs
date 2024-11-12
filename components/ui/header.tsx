@@ -22,10 +22,10 @@ export default function Header() {
 					</div>
 					{/* Site navigation */}
 					<ul className='flex gap-20'>
-						<li className='text-blue-200/65'>About Us</li>
-						<li className='text-blue-200/65'>Projects</li>
-						<li className='text-blue-200/65'>Blogs</li>
-						<li className='text-blue-200/65'>Profile</li>
+						<li className='text-blue-200'>About Us</li>
+						<li className='text-blue-200'>Projects</li>
+						<li className='text-blue-200'>Blogs</li>
+						<li className='text-blue-200'>Profile</li>
 					</ul>
 					{/* Desktop sign in links */}
 					<ul className='flex flex-1 items-center justify-end gap-3'>

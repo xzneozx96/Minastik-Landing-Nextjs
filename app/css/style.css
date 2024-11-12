@@ -1,7 +1,25 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
 
 /* Additional styles */
-@import "additional-styles/utility-patterns.css";
-@import "additional-styles/theme.css";
-@import "tailwindcss/utilities";
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/theme.css';
+@import 'tailwindcss/utilities';
+
+.spotlight-background::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: radial-gradient(
+			50% 38.81% at 50% 61.19%,
+			rgba(75, 113, 250, 0.12) 0,
+			rgba(5, 5, 11, 0) 100%
+		),
+		radial-gradient(
+			50% 36.46% at 50% 36.46%,
+			rgba(75, 113, 250, 0.08) 0,
+			rgba(5, 5, 11, 0) 100%
+		);
+	z-index: 100;
+}

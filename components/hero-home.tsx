@@ -13,7 +13,7 @@ export default function HeroHome() {
 			<div className='relative h-screen'>
 				{/* Hero content */}
 				{/* <div> */}
-				<div className='w-full px-4 sm:px-6 text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-40%] pointer-events-none select-none'>
+				<div className='spotlight-background w-[1200px] px-4 sm:px-6 text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-35%] pointer-events-none select-none'>
 					{/* <AnimatedRainbowTextWithBorder /> */}
 					<AnimatedShinyTextWithBorder />
 					<h1 className='animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-8xl pointer-events-none select-none'>
@@ -59,7 +59,7 @@ export default function HeroHome() {
 
 				<div className='absolute top-0 bottom-0 z-[-1] pointer-events-none select-none'>
 					<SparklesCore
-						id='tsparticlesfullpage'
+						id='hero-sparkle'
 						background='transparent'
 						minSize={0.6}
 						maxSize={1.4}

@@ -9,7 +9,7 @@ export default function MinastikFeatures() {
 	return (
 		<section>
 			<div className='mx-auto max-w-6xl px-4 sm:px-6 pt-[150px]'>
-				<div className='pb-12 md:pb-20'>
+				<div className='pb-12 md:pb-20 relative spotlight-background'>
 					{/* Section header */}
 					<div className='mx-auto max-w-3xl pb-12 text-center md:pb-20'>
 						<div className='inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50'>
@@ -30,10 +30,10 @@ export default function MinastikFeatures() {
 					<Spotlight className='group mx-auto grid grid-rows-[auto_auto_auto] gap-6 md:grid-cols-5 md:gap-8'>
 						{/* Card 1 */}
 						<a
-							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid gap-4 md:col-span-3'
+							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid md:col-span-3'
 							href='#0'
 						>
-							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 shadow-glass-effect'>
+							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50'>
 								<BorderBeam />
 
 								{/* Content */}
@@ -55,22 +55,58 @@ export default function MinastikFeatures() {
 								</div>
 
 								{/* Image */}
-								<Image
+								{/* <Image
 									className='d-block mx-auto'
 									src={WorflowImg01}
 									width={350}
 									height={288}
 									alt='Workflow 01'
-								/>
+								/> */}
+
+								<div className='p-6'>
+									<video
+										autoPlay
+										muted
+										loop
+									>
+										<source
+											src={'videos//iot-solutions.mp4'}
+											type='video/mp4'
+										/>
+										Your browser does not support the video tag.
+									</video>
+								</div>
 							</div>
 						</a>
 
 						{/* Card 2 */}
 						<a
-							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid gap-4 md:col-span-2'
+							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid md:col-span-2'
 							href='#0'
 						>
-							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 shadow-glass-effect'>
+							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50'>
+								{/* Image */}
+								{/* <Image
+									className='d-block mx-auto'
+									src={WorflowImg02}
+									width={350}
+									height={288}
+									alt='Workflow 02'
+								/> */}
+								<div className='p-6'>
+									<video
+										autoPlay
+										muted
+										loop
+									>
+										<source
+											src={'videos//web-design.mp4'}
+											type='video/mp4'
+										/>
+										Your browser does not support the video tag.
+									</video>
+								</div>
+
 								{/* Content */}
 								<div className='p-6 relative z-10'>
 									<div className='mb-5'>
@@ -90,24 +126,37 @@ export default function MinastikFeatures() {
 										customized on your own with the latest technologies.
 									</p>
 								</div>
-
-								{/* Image */}
-								<Image
-									className='d-block mx-auto'
-									src={WorflowImg02}
-									width={350}
-									height={288}
-									alt='Workflow 02'
-								/>
 							</div>
 						</a>
 
 						{/* Card 3 */}
 						<a
-							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid gap-4 md:col-span-2'
+							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid md:col-span-2'
 							href='#0'
 						>
-							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 shadow-glass-effect'>
+							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50'>
+								{/* Image */}
+								{/* <Image
+									className='d-block mx-auto'
+									src={WorflowImg03}
+									width={350}
+									height={288}
+									alt='Workflow 03'
+								/> */}
+								<div className='p-6'>
+									<video
+										autoPlay
+										muted
+										loop
+									>
+										<source
+											src={'videos//management-system.mp4'}
+											type='video/mp4'
+										/>
+										Your browser does not support the video tag.
+									</video>
+								</div>
+
 								{/* Content */}
 								<div className='p-6 relative z-10'>
 									<div className='mb-5'>
@@ -127,24 +176,15 @@ export default function MinastikFeatures() {
 										streamline data, and empower smarter decision-making
 									</p>
 								</div>
-
-								{/* Image */}
-								<Image
-									className='d-block mx-auto'
-									src={WorflowImg03}
-									width={350}
-									height={288}
-									alt='Workflow 03'
-								/>
 							</div>
 						</a>
 
 						{/* Card 4 */}
 						<a
-							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid gap-4 md:col-span-3'
+							className='group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid md:col-span-3'
 							href='#0'
 						>
-							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 shadow-glass-effect'>
+							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50'>
 								{/* Content */}
 								<div className='p-6 relative z-10'>
 									<div className='mb-5'>
@@ -167,13 +207,33 @@ export default function MinastikFeatures() {
 								</div>
 
 								{/* Image */}
-								<Image
+								{/* <Image
 									className='d-block mx-auto'
 									src={WorflowImg03}
 									width={350}
 									height={288}
 									alt='Workflow 03'
-								/>
+								/> */}
+
+								<div className='p-6'>
+									<video
+										autoPlay
+										muted
+										loop
+										style={{
+											height: '340px',
+											width: '100%',
+											objectFit: 'cover',
+											objectPosition: '50% 64%',
+										}}
+									>
+										<source
+											src={'videos//ai-assistant.mp4'}
+											type='video/mp4'
+										/>
+										Your browser does not support the video tag.
+									</video>
+								</div>
 							</div>
 						</a>
 					</Spotlight>
