@@ -55,7 +55,7 @@ export default function HeroHome() {
 						videoHeight={1080}
 					/> */}
 
-				{/* <SplineRobot /> */}
+				<SplineRobot />
 
 				<div className='absolute top-0 bottom-0 z-[-1] pointer-events-none select-none'>
 					<SparklesCore
