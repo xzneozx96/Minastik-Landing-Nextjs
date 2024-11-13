@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Logo from './logo';
+import { BlurFade } from './blur-fade';
 
 export default function Header() {
 	return (
@@ -18,25 +19,63 @@ export default function Header() {
 
 					{/* Site branding */}
 					<div className='flex flex-1 items-center'>
-						<Logo />
+						<BlurFade
+							inView
+							delay={4.25}
+						>
+							<Logo />
+						</BlurFade>
 					</div>
 					{/* Site navigation */}
 					<ul className='flex gap-20'>
-						<li className='text-blue-200'>About Us</li>
-						<li className='text-blue-200'>Projects</li>
-						<li className='text-blue-200'>Blogs</li>
-						<li className='text-blue-200'>Profile</li>
+						<li className='text-blue-200'>
+							<BlurFade
+								inView
+								delay={4.5}
+							>
+								About Us
+							</BlurFade>
+						</li>
+						<li className='text-blue-200'>
+							<BlurFade
+								inView
+								delay={4.75}
+							>
+								Projects
+							</BlurFade>
+						</li>
+						<li className='text-blue-200'>
+							<BlurFade
+								inView
+								delay={5}
+							>
+								Blogs
+							</BlurFade>
+						</li>
+						<li className='text-blue-200'>
+							<BlurFade
+								inView
+								delay={5.25}
+							>
+								Profile
+							</BlurFade>
+						</li>
 					</ul>
 					{/* Desktop sign in links */}
 					<ul className='flex flex-1 items-center justify-end gap-3'>
-						<li>
-							<Link
-								href='/signup'
-								className='btn-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'
-							>
-								Contact Us
-							</Link>
-						</li>
+						<BlurFade
+							inView
+							delay={5.5}
+						>
+							<li>
+								<Link
+									href='/signup'
+									className='btn-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'
+								>
+									Contact Us
+								</Link>
+							</li>
+						</BlurFade>
 					</ul>
 				</div>
 			</div>

@@ -21,15 +21,15 @@ export default function SplineRobot() {
 				<div>Scroll to view the model</div>
 			)}
 			{/* <video
-					autoPlay
-					muted
-				>
-					<source
-						src={'videos//robot-48fps.mp4'}
-						type='video/mp4'
-					/>
-					Your browser does not support the video tag.
-				</video> */}
+				autoPlay
+				muted
+			>
+				<source
+					src={'videos//robot-48fps.mp4'}
+					type='video/mp4'
+				/>
+				Your browser does not support the video tag.
+			</video> */}
 		</div>
 	);
 }
