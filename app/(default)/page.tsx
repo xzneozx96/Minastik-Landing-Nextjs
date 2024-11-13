@@ -9,6 +9,7 @@ import MinastikFeatures from '@/components/minastik-features';
 import Testimonials from '@/components/testimonials';
 import Cta from '@/components/cta';
 import Features from '@/components/features';
+import { ProjectsShowcase } from '@/components/projects-showcase';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			{/* <PageIllustration /> */}
 			<Hero />
 			<MinastikFeatures />
+			<ProjectsShowcase />
 			<Features />
 			<Testimonials />
 			<Cta />

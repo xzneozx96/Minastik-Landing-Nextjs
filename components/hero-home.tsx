@@ -61,11 +61,12 @@ export default function HeroHome() {
 					<SparklesCore
 						id='hero-sparkle'
 						background='transparent'
-						minSize={0.6}
-						maxSize={1.4}
+						minSize={1}
+						maxSize={2}
+						speed={1.5}
 						particleDensity={10}
 						className='w-full h-full'
-						particleColor='#60a5fa'
+						particleColor='#32A7FF'
 					/>
 				</div>
 

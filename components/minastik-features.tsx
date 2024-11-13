@@ -143,7 +143,7 @@ export default function MinastikFeatures() {
 									height={288}
 									alt='Workflow 03'
 								/> */}
-								<div className='p-6'>
+								<div className='p-6 relative'>
 									<video
 										autoPlay
 										muted
@@ -185,6 +185,8 @@ export default function MinastikFeatures() {
 							href='#0'
 						>
 							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50'>
+								<BorderBeam />
+
 								{/* Content */}
 								<div className='p-6 relative z-10'>
 									<div className='mb-5'>
