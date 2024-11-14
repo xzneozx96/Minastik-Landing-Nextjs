@@ -3,13 +3,13 @@ export const metadata = {
 	description: 'Page description',
 };
 
-import PageIllustration from '@/components/page-illustration';
+import Blogs from '@/components/blogs';
+import Cta from '@/components/cta';
 import Hero from '@/components/hero-home';
 import MinastikFeatures from '@/components/minastik-features';
-import Testimonials from '@/components/testimonials';
-import Cta from '@/components/cta';
-import Features from '@/components/features';
 import { ProjectsShowcase } from '@/components/projects-showcase';
+import Testimonials from '@/components/testimonials';
+import WhyMinastik from '@/components/why-minastik';
 
 export default function Home() {
 	return (
@@ -18,7 +18,8 @@ export default function Home() {
 			<Hero />
 			<MinastikFeatures />
 			<ProjectsShowcase />
-			<Features />
+			<WhyMinastik />
+			<Blogs />
 			<Testimonials />
 			<Cta />
 		</>

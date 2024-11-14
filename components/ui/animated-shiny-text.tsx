@@ -36,9 +36,9 @@ const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
 	);
 };
 
-export function AnimatedShinyTextWithBorder() {
+export function AnimatedShinyTextWithBorder({ text }: { text: string }) {
 	return (
-		<div className='z-10 flex mb-6 items-center justify-center'>
+		<div className='z-10 flex items-center justify-center'>
 			<div
 				className={cn(
 					'backdrop-blur-[4px] inline-flex h-9 items-center justify-between rounded-full border border-white/10 text-xs text-white'
@@ -49,7 +49,7 @@ export function AnimatedShinyTextWithBorder() {
 				}}
 			>
 				<AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400'>
-					<span>✨ Grow with Minastik</span>
+					<span>{text}</span>
 				</AnimatedShinyText>
 			</div>
 		</div>

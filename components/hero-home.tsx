@@ -1,12 +1,7 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg';
-import ModalVideo from '@/components/modal-video';
-import { AnimatedRainbowTextWithBorder } from './ui/animated-rainbow-text';
-import Spline from '@splinetool/react-spline';
-import SplineRobot from './ui/spline-3D-robot';
-import { SparklesCore } from './ui/sparkles';
 import { AnimatedShinyTextWithBorder } from './ui/animated-shiny-text';
-import { BorderBeam } from './ui/border-beam';
 import { BlurFade } from './ui/blur-fade';
+import { SparklesCore } from './ui/sparkles';
+import SplineRobot from './ui/spline-3D-robot';
 
 export default function HeroHome() {
 	return (
@@ -21,7 +16,7 @@ export default function HeroHome() {
 						delay={3.75}
 						duration={0.5}
 					>
-						<AnimatedShinyTextWithBorder />
+						<AnimatedShinyTextWithBorder text='✨ Grow with Minastik' />
 					</BlurFade>
 
 					<BlurFade

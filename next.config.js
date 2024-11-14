@@ -8,6 +8,12 @@ const nextConfig = {
 				port: '',
 				pathname: '/images/products/thumbnails/new/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'minastik.com',
+				port: '',
+				pathname: '/wp-content/uploads/**',
+			},
 		],
 	},
 };
