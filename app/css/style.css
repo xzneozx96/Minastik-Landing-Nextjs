@@ -48,3 +48,103 @@
 	-webkit-mask-size: cover;
 	mask-size: cover;
 }
+
+.testimonials-heart-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-mask-size: cover;
+	mask-size: cover;
+}
+
+.testimonials-heart-image,
+.testimonials-heart-animation {
+	height: 100%;
+	width: 100%;
+}
+
+.decor-animation-left.lazy-background-image-maskImage {
+	-webkit-mask-image: url('/images/heart-animation-left.png');
+	mask-image: url('/images/heart-animation-left.png');
+}
+
+.decor-animation-right.lazy-background-image-maskImage {
+	-webkit-mask-image: url('/images/heart-animation-right.png');
+	mask-image: url('/images/heart-animation-right.png');
+}
+
+.testimonials-heart-animation div {
+	animation: 5s linear infinite;
+	display: flex;
+	height: 120%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transition: 0.45s linear transform;
+	width: 200%;
+}
+
+@keyframes testimonialsHeartLeftAnimation {
+	0% {
+		transform: translate(-50%, -50%) rotate(-180deg);
+	}
+	60%,
+	100% {
+		transform: translate(-50%, -50%) rotate(-540deg);
+	}
+}
+
+@keyframes testimonialsHeartRightAnimation {
+	0% {
+		transform: translate(-50%, -50%) rotate(180deg);
+	}
+	60%,
+	100% {
+		transform: translate(-50%, -50%) rotate(540deg);
+	}
+}
+
+.decor-animation-left .animated-item {
+	animation-name: testimonialsHeartLeftAnimation;
+	transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.decor-animation-right .animated-item {
+	animation-delay: 1s;
+	animation-name: testimonialsHeartRightAnimation;
+	transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.lazy-background-image {
+	transition: 1s cubic-bezier(0.6, 0.6, 0, 1) opacity;
+}
+
+.testimonials-heart-animation div::before,
+.testimonials-heart-animation div::after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.decor-animation-left .animated-item::before {
+	background: conic-gradient(
+		from 180deg at 99.99% 49.95%,
+		rgba(177, 218, 255, 0) -202.43deg,
+		rgba(177, 218, 255, 0) 26.8deg,
+		#b1daff 89.95deg,
+		rgba(177, 218, 255, 0) 157.57deg,
+		rgba(177, 218, 255, 0) 386.8deg
+	);
+}
+
+.decor-animation-right .animated-item::after {
+	background: conic-gradient(
+		from 0deg at 0.01% 49.95%,
+		rgba(201, 177, 255, 0) -202.43deg,
+		rgba(201, 177, 255, 0) 26.8deg,
+		#c9b1ff 89.95deg,
+		rgba(201, 177, 255, 0) 157.57deg,
+		rgba(201, 177, 255, 0) 386.8deg
+	);
+}

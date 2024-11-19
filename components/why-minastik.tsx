@@ -1,3 +1,5 @@
+import { WhyMinastikAnimation } from './why-minastik-animation';
+
 export default function WhyMinastik() {
 	return (
 		<section className='relative'>
@@ -58,7 +60,6 @@ export default function WhyMinastik() {
 							striving to deliver an exceptional experience for our customers.
 						</p>
 					</div>
-
 					{/* <div
 						className='flex justify-center pb-4 md:pb-12'
 						data-aos='fade-up'
