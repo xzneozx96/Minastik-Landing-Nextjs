@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { SparklesCore } from './ui/sparkles';
 import { BlurFade } from './ui/blur-fade';
 import LogoRippleAnimation from './logo-ripple-animation';
+import { Marquee } from './ui/marquee';
 
 export default function Partners() {
 	const logos = [
@@ -119,6 +120,13 @@ export default function Partners() {
 		},
 	];
 
+	const quarterLength = logos.length / 4;
+
+	const firstRow = logos.slice(0, quarterLength);
+	const secondRow = logos.slice(quarterLength, quarterLength * 2);
+	const thirdRow = logos.slice(quarterLength * 2, quarterLength * 3);
+	const fourthRow = logos.slice(quarterLength * 3);
+
 	return (
 		<section className='relative'>
 			<LogoRippleAnimation />
@@ -158,15 +166,22 @@ export default function Partners() {
 					</div> */}
 				</div>
 
-				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 py-20'>
+				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 py-20 [perspective:1000px] [transform-style:preserve-3d]'>
 					{/* logos */}
-					<div className='grid grid-cols-2 gap-8 sm:grid-cols-[repeat(auto-fill,minmax(200px,1fr))]'>
-						{logos.map((logo, index) => (
-							<BlurFade
-								key={index}
-								delay={0.1 + index * 0.05}
-								inView
-							>
+					<div
+						className='grid grid-cols-2 gap-8 sm:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] marquee-wrap vertical'
+						style={{
+							transform: 'translateY(-50px) rotateX(15deg)',
+							opacity: 0.8,
+							height: '860px',
+						}}
+					>
+						<Marquee
+							pauseOnHover
+							vertical
+							className='[--duration:30s]'
+						>
+							{firstRow.map((logo, index) => (
 								<div
 									className='relative flex justify-center items-center bg-white rounded-lg p-6'
 									key={index}
@@ -177,11 +192,75 @@ export default function Partners() {
 										width={150}
 										height={150}
 										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
-										// style={{ filter: 'grayscale(1)' }}
 									/>
 								</div>
-							</BlurFade>
-						))}
+							))}
+						</Marquee>
+
+						<Marquee
+							pauseOnHover
+							vertical
+							reverse
+							className='[--duration:30s]'
+						>
+							{secondRow.map((logo, index) => (
+								<div
+									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									key={index}
+								>
+									<Image
+										src={logo.logo}
+										alt={logo.name}
+										width={150}
+										height={150}
+										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+									/>
+								</div>
+							))}
+						</Marquee>
+
+						<Marquee
+							pauseOnHover
+							vertical
+							className='[--duration:30s]'
+						>
+							{thirdRow.map((logo, index) => (
+								<div
+									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									key={index}
+								>
+									<Image
+										src={logo.logo}
+										alt={logo.name}
+										width={150}
+										height={150}
+										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+									/>
+								</div>
+							))}
+						</Marquee>
+
+						<Marquee
+							pauseOnHover
+							vertical
+							reverse
+							className='[--duration:30s]'
+						>
+							{fourthRow.map((logo, index) => (
+								<div
+									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									key={index}
+								>
+									<Image
+										src={logo.logo}
+										alt={logo.name}
+										width={150}
+										height={150}
+										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+									/>
+								</div>
+							))}
+						</Marquee>
 					</div>
 				</div>
 			</div>

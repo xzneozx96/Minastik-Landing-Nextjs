@@ -158,6 +158,19 @@
 	width: 100%;
 	z-index: 1;
 }
+
+.marquee-wrap.vertical::before {
+	background: linear-gradient(
+		0deg,
+		#030014 0%,
+		rgba(3, 0, 20, 0.5) 16.67%,
+		rgba(3, 0, 20, 0) 33.33%,
+		rgba(3, 0, 20, 0) 50%,
+		rgba(3, 0, 20, 0) 66.67%,
+		rgba(3, 0, 20, 0.5) 83.33%,
+		#030014 100%
+	);
+}
 /* end of styles for testimonials-heart-animation */
 
 /* styles for logo-ripple-animation component */

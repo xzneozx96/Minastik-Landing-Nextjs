@@ -89,11 +89,12 @@ export default function WhyMinastik() {
 								/>
 							</svg>
 							<h3 className='mb-1 font-nacelle text-[1rem] font-semibold text-gray-200'>
-								Project Milestones
+								24/7 Dedicated Support
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								No matter the time of day, Minastik AI agents are always
+								available to tackle your inquiries and provide swift solutions
+								to ensure your operations run smoothly.
 							</p>
 						</article>
 						<article>
@@ -110,11 +111,12 @@ export default function WhyMinastik() {
 								<path d='M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z' />
 							</svg>
 							<h3 className='mb-1 font-nacelle text-[1rem] font-semibold text-gray-200'>
-								Team Views
+								Scalable for Growth
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								Our solutions grow with your business, allowing you to
+								seamlessly expand and handle increased demand without
+								disruptions.
 							</p>
 						</article>
 						<article>
@@ -131,11 +133,12 @@ export default function WhyMinastik() {
 								/>
 							</svg>
 							<h3 className='mb-1 font-nacelle text-[1rem] font-semibold text-gray-200'>
-								Advanced Search
+								Secure & Reliable
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								Protect your data and operations with our state-of-the-art
+								security measures, giving you peace of mind as you focus on
+								growing your business.
 							</p>
 						</article>
 						<article>
@@ -157,11 +160,11 @@ export default function WhyMinastik() {
 								<path d='m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z' />
 							</svg>
 							<h3 className='mb-1 font-nacelle text-[1rem] font-semibold text-gray-200'>
-								Strategic Initiatives
+								Cost-Efficient Strategies
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								Simplify complex processes with intelligent tools designed to
+								save time, reduce effort, and improve productivity.
 							</p>
 						</article>
 						<article>
@@ -181,8 +184,9 @@ export default function WhyMinastik() {
 								Flexible Workflows
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								With AGILE as the backbone of our approach, we adapt quickly to
+								sudden changes, ensuring your evolving needs are met without
+								compromising quality.
 							</p>
 						</article>
 						<article>
@@ -199,11 +203,11 @@ export default function WhyMinastik() {
 								<path d='M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z' />
 							</svg>
 							<h3 className='mb-1 font-nacelle text-[1rem] font-semibold text-gray-200'>
-								Unified Timeline
+								Cutting-Edge Technology
 							</h3>
 							<p className='text-indigo-200/65'>
-								Track progress across custom flows for your team. Find the right
-								balance for the user, privacy and security.
+								Stay ahead of the curve with our AI-powered solutions, designed
+								to give you a competitive edge.
 							</p>
 						</article>
 					</div>
