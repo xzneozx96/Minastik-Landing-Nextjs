@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import LogoAnimation from '@/public/images/logo-animation.png';
+import { SparklesCore } from './ui/sparkles';
 
 export default function LogoRippleAnimation() {
 	return (
-		<span>
+		<div>
 			<div className='logo-ripple-animation smart-animation smart-animation-visible'>
 				<Image
 					src={LogoAnimation}
@@ -13,7 +14,7 @@ export default function LogoRippleAnimation() {
 					className='lazy-image lazy-image-loaded smart-background object-cover'
 				/>
 
-				<div className='lazy-background-image lazy-background-image-maskImage lazy-background-image-loaded smart-line'>
+				<div className='lazy-background-image lazy-background-image-maskImage lazy-background-image-loaded smart-line spotlight-background'>
 					<div></div>
 					<div></div>
 				</div>
@@ -31,6 +32,6 @@ export default function LogoRippleAnimation() {
 					}}
 				/>
 			</div>
-		</span>
+		</div>
 	);
 }

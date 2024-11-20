@@ -5,8 +5,8 @@ import { SparklesCore } from './ui/sparkles';
 export default function Blogs() {
 	return (
 		<section className='relative'>
-			<div className='pb-16'>
-				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 py-20 spotlight-background'>
+			<div className='pb-16 spotlight-background'>
+				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 py-20'>
 					<div className='text-center relative mx-auto max-w-3xl'>
 						<div className='inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50'>
 							<span className='inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent'>
@@ -25,7 +25,7 @@ export default function Blogs() {
 						</p>
 					</div>
 
-					<div className='absolute top-0 bottom-0 z-[-1] w-full pointer-events-none select-none'>
+					{/* <div className='absolute top-0 bottom-0 z-[-1] w-full pointer-events-none select-none'>
 						<SparklesCore
 							id='blog-sparkle'
 							background='transparent'
@@ -36,7 +36,7 @@ export default function Blogs() {
 							className='w-full h-full'
 							particleColor='#32A7FF'
 						/>
-					</div>
+					</div> */}
 				</div>
 
 				<div className='max-w-7xl mx-auto'>

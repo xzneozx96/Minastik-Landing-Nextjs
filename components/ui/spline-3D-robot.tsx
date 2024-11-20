@@ -8,8 +8,6 @@ export default function SplineRobot() {
 	const splineRef = useRef(null);
 	const inView = useInView(splineRef, { amount: 0.5 });
 
-	console.log('inView', inView);
-
 	return (
 		<div
 			ref={splineRef}
