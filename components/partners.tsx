@@ -115,7 +115,7 @@ export default function Partners() {
 		},
 		{
 			name: 'Petit Souris',
-			logo: '/images/partner-logo/petitsouris.png',
+			logo: '/images/partner-logo/PetitSouris.png',
 		},
 	];
 
