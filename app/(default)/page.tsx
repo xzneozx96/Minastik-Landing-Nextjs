@@ -7,6 +7,7 @@ import Blogs from '@/components/blogs';
 import Cta from '@/components/cta';
 import Hero from '@/components/hero-home';
 import MinastikFeatures from '@/components/minastik-features';
+import Partners from '@/components/partners';
 import { ProjectsShowcase } from '@/components/projects-showcase';
 import Testimonials from '@/components/testimonials';
 import WhyMinastik from '@/components/why-minastik';
@@ -19,8 +20,9 @@ export default function Home() {
 			<MinastikFeatures />
 			<ProjectsShowcase />
 			<WhyMinastik />
-			<Blogs />
+			<Partners />
 			<Testimonials />
+			<Blogs />
 			<Cta />
 		</>
 	);

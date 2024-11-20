@@ -49,6 +49,7 @@
 	mask-size: cover;
 }
 
+/* styles for testimonials-heart-animation */
 .testimonials-heart-animation {
 	position: absolute;
 	top: 0;
@@ -74,7 +75,7 @@
 }
 
 .testimonials-heart-animation div {
-	animation: 5s linear infinite;
+	animation: 4s linear infinite;
 	display: flex;
 	height: 120%;
 	left: 50%;
@@ -110,7 +111,7 @@
 }
 
 .decor-animation-right .animated-item {
-	animation-delay: 1s;
+	animation-delay: 2s;
 	animation-name: testimonialsHeartRightAnimation;
 	transform: translate(-50%, -50%) rotate(180deg);
 }
@@ -127,24 +128,208 @@
 	width: 100%;
 }
 
-.decor-animation-left .animated-item::before {
-	background: conic-gradient(
-		from 180deg at 99.99% 49.95%,
-		rgba(177, 218, 255, 0) -202.43deg,
-		rgba(177, 218, 255, 0) 26.8deg,
-		#b1daff 89.95deg,
-		rgba(177, 218, 255, 0) 157.57deg,
-		rgba(177, 218, 255, 0) 386.8deg
+.decor-animation-left .animated-item::before,
+.decor-animation-right .animated-item::after {
+	background: linear-gradient(
+		to right,
+		rgba(255, 170, 64, 0.5),
+		rgba(156, 64, 255, 0.5),
+		rgba(255, 170, 64, 0.5)
 	);
 }
 
-.decor-animation-right .animated-item::after {
-	background: conic-gradient(
-		from 0deg at 0.01% 49.95%,
-		rgba(201, 177, 255, 0) -202.43deg,
-		rgba(201, 177, 255, 0) 26.8deg,
-		#c9b1ff 89.95deg,
-		rgba(201, 177, 255, 0) 157.57deg,
-		rgba(201, 177, 255, 0) 386.8deg
+.marquee-wrap::before {
+	background: linear-gradient(
+		270deg,
+		#030014 0%,
+		rgba(3, 0, 20, 0.5) 16.67%,
+		rgba(3, 0, 20, 0) 33.33%,
+		rgba(3, 0, 20, 0) 50%,
+		rgba(3, 0, 20, 0) 66.67%,
+		rgba(3, 0, 20, 0.5) 83.33%,
+		#030014 100%
 	);
+	content: '';
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
+/* end of styles for testimonials-heart-animation */
+
+/* styles for logo-ripple-animation component */
+.smart-background,
+.smart-background-lights,
+.smart-animation {
+	width: 1254px;
+	transform: translate(-50%);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.smart-background {
+	height: 1729px;
+}
+
+.lazy-image {
+	display: block;
+	transition: 1s cubic-bezier(0.6, 0.6, 0, 1) opacity;
+}
+
+.smart-line {
+	width: 1248px;
+	height: 272px;
+	position: absolute;
+	top: 0;
+	transform: translate(-50%);
+	left: 50%;
+}
+
+.smart-line div {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	animation: 6s infinite cubic-bezier(0.6, 0.6, 0, 1);
+}
+
+@keyframes smart-line-1 {
+	0%,
+	73.01% {
+		transform: translate(-300px);
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 1;
+	}
+	50% {
+		transform: translate(470px);
+	}
+	73% {
+		transform: translate(470px);
+		opacity: 0;
+	}
+}
+
+.smart-line div:first-child {
+	left: 0;
+	background: linear-gradient(
+		to right,
+		transparent 0%,
+		#6366f1 50%,
+		transparent 60%
+	);
+	transform: translate(-300px);
+	animation-name: smart-line-1;
+}
+
+@keyframes smart-line-2 {
+	0%,
+	73.01% {
+		transform: translate(300px);
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		transform: translate(-470px);
+	}
+	73% {
+		transform: translate(-470px);
+		opacity: 0;
+	}
+}
+.smart-line div:last-child {
+	right: 0;
+	background: linear-gradient(
+		to left,
+		transparent 0%,
+		#6366f1 50%,
+		transparent 60%
+	);
+	transform: translate(300px);
+	animation-name: smart-line-2;
+}
+
+.lazy-background-image {
+	transition: 1s cubic-bezier(0.6, 0.6, 0, 1) opacity;
+}
+
+.logo-ripple-animation .lazy-background-image-maskImage {
+	-webkit-mask-image: url('/images/logo-animation-outline.png');
+	mask-image: url('/images/logo-animation-outline.png');
+	-webkit-mask-size: cover;
+	mask-size: cover;
+}
+
+.smart-circle {
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+	background: linear-gradient(
+			180deg,
+			rgba(0, 3, 25, 0) 0%,
+			rgba(255, 255, 255, 0.04) 100%
+		),
+		rgba(255, 255, 255, 0.01);
+}
+
+@keyframes smart-circle-1 {
+	0%,
+	100% {
+		transform: translate(-50%) scale(1);
+	}
+	50% {
+		transform: translate(-50%) scale(0.891);
+	}
+}
+
+.smart-circle-1 {
+	width: 148px;
+	height: 148px;
+	top: 83px;
+	animation: smart-circle-1 5s infinite cubic-bezier(0.6, 0.6, 0, 1);
+}
+
+@keyframes smart-circle-2 {
+	0%,
+	100% {
+		transform: translate(-50%) scale(1);
+	}
+	50% {
+		transform: translate(-50%) scale(0.849);
+	}
+}
+
+.smart-circle-2 {
+	width: 212px;
+	height: 212px;
+	top: 51px;
+	animation: smart-circle-2 5s infinite cubic-bezier(0.6, 0.6, 0, 1);
+	animation-delay: 0.5s;
+}
+
+.smart-octopus {
+	width: 112px;
+	height: 112px;
+	top: 101px;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+}
+
+.lazy-video {
+	transition: 0.75s cubic-bezier(0.6, 0.6, 0, 1) opacity;
+	pointer-events: none;
+}
+/* end of styles for logo-ripple-animation component */

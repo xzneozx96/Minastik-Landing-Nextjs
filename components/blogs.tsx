@@ -1,15 +1,13 @@
-import Image from 'next/image';
 import TestimonialImg01 from '@/public/images/testimonial-01.jpg';
-import { AnimatedShinyTextWithBorder } from './ui/animated-shiny-text';
-import { AnimatedRainbowTextWithBorder } from './ui/animated-rainbow-text';
+import Image from 'next/image';
 import { SparklesCore } from './ui/sparkles';
 
 export default function Blogs() {
 	return (
 		<section className='relative'>
-			<div className='pb-16 spotlight-background'>
-				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 pt-[150px]'>
-					<div className='text-center relative mb-10 mx-auto max-w-3xl'>
+			<div className='pb-16'>
+				<div className='relative mx-auto max-w-6xl px-4 sm:px-6 py-20 spotlight-background'>
+					<div className='text-center relative mx-auto max-w-3xl'>
 						<div className='inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-indigo-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-indigo-200/50'>
 							<span className='inline-flex bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent'>
 								AI-powered Blogs
@@ -25,19 +23,19 @@ export default function Blogs() {
 							every post is crafted by advanced AI to bring you the latest in
 							technology world
 						</p>
+					</div>
 
-						<div className='absolute top-0 bottom-0 z-[-1] w-full pointer-events-none select-none'>
-							<SparklesCore
-								id='blog-sparkle'
-								background='transparent'
-								minSize={0.6}
-								maxSize={2}
-								speed={1.5}
-								particleDensity={20}
-								className='w-full h-full'
-								particleColor='#32A7FF'
-							/>
-						</div>
+					<div className='absolute top-0 bottom-0 z-[-1] w-full pointer-events-none select-none'>
+						<SparklesCore
+							id='blog-sparkle'
+							background='transparent'
+							minSize={0.6}
+							maxSize={2}
+							speed={1.5}
+							particleDensity={20}
+							className='w-full h-full'
+							particleColor='#32A7FF'
+						/>
 					</div>
 				</div>
 

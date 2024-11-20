@@ -9,7 +9,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				inter: ['var(--font-inter)', 'sans-serif'],
-				nacelle: ['var(--font-inter)', 'sans-serif'],
+				nacelle: ['var(--font-grotesk)', 'sans-serif'],
+				grotesk: ['var(--font-grotesk)', 'sans-serif'],
 			},
 			fontSize: {
 				xs: ['0.8125rem', { lineHeight: '1.5384' }],
@@ -39,6 +40,8 @@ module.exports = {
 				'shiny-text': 'shiny-text 5s infinite',
 				rainbow: 'rainbow 5s linear infinite',
 				'border-beam': 'border-beam 8s infinite linear',
+				marquee: 'marquee var(--duration) linear infinite',
+				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
 			},
 			keyframes: {
 				shine: {
@@ -67,6 +70,14 @@ module.exports = {
 					'100%': {
 						'offset-distance': '100%',
 					},
+				},
+				marquee: {
+					from: { transform: 'translateX(0)' },
+					to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+				},
+				'marquee-vertical': {
+					from: { transform: 'translateY(0)' },
+					to: { transform: 'translateY(calc(-100% - var(--gap)))' },
 				},
 			},
 		},

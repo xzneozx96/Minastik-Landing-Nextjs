@@ -1,6 +1,7 @@
 import './css/style.css';
 
 import { Inter } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import Header from '@/components/ui/header';
@@ -9,6 +10,12 @@ import SmoothScrolling from '../components/smooth-scroll';
 const inter = Inter({
 	subsets: ['latin'],
 	variable: '--font-inter',
+	display: 'swap',
+});
+
+const grotek = Space_Grotesk({
+	subsets: ['latin'],
+	variable: '--font-grotesk',
 	display: 'swap',
 });
 
@@ -52,7 +59,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${inter.variable} ${nacelle.variable} bg-[#00031a] font-inter text-base text-gray-200 antialiased`}
+				className={`${inter.variable} ${nacelle.variable} ${grotek.variable} bg-[#00031a] font-grotesk text-base text-gray-200 antialiased`}
 			>
 				<SmoothScrolling>
 					<div className='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'>
