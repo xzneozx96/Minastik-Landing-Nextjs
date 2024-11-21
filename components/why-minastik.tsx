@@ -68,8 +68,8 @@ export default function WhyMinastik() {
 								{/* Image */}
 								<div className='p-6 flex-1 flex justify-center items-center'>
 									<Image
-										className='d-block mx-auto object-cover'
-										src='/images/why-minastik/24h-support.svg'
+										className='d-block mx-auto object-cover w-full'
+										src='/images/why-minastik/24h-support.webp'
 										width={460}
 										height={340}
 										alt='Workflow 03'
@@ -109,7 +109,7 @@ export default function WhyMinastik() {
 								<div className='p-6 flex-1 flex justify-center items-center'>
 									<Image
 										className='d-block mx-auto object-cover'
-										src='/images/why-minastik/secure-reliable.svg'
+										src='/images/why-minastik/secure-reliable-2.webp'
 										width={460}
 										height={340}
 										alt='Workflow 03'
@@ -149,7 +149,7 @@ export default function WhyMinastik() {
 								<div className='p-6 flex-1 flex justify-center items-center'>
 									<Image
 										className='d-block mx-auto object-cover rounded-xl'
-										src='/images/why-minastik/scalable.svg'
+										src='/images/why-minastik/scalable.webp'
 										width={460}
 										height={340}
 										alt='Workflow 03'
@@ -189,7 +189,7 @@ export default function WhyMinastik() {
 								<div className='p-6 flex-1 flex justify-center items-center'>
 									<Image
 										className='d-block mx-auto object-cover rounded-xl'
-										src='/images/why-minastik/flexible-workflow.svg'
+										src='/images/why-minastik/flexible.webp'
 										width={460}
 										height={340}
 										alt='Workflow 03'
@@ -228,7 +228,7 @@ export default function WhyMinastik() {
 								<div className='p-6 flex-1 flex justify-center items-center'>
 									<Image
 										className='d-block mx-auto object-contain'
-										src='/images/why-minastik/cost-efficient.svg'
+										src='/images/why-minastik/cost-efficient.webp'
 										width={460}
 										height={340}
 										alt='Workflow 03'
