@@ -7,7 +7,7 @@ import { BlurFade } from './blur-fade';
 export default function Header() {
 	return (
 		<header className='z-30 w-full fixed top-0 py-4 backdrop-blur-[12px]'>
-			<div className='mx-auto max-w-6xl px-4 sm:px-6'>
+			<div className='mx-auto max-w-7xl px-4 sm:px-6'>
 				<div className='relative flex h-14 items-center justify-between gap-3 rounded-2xl'>
 					{/* tailwind css for round & border: bg-gray-900/90 px-3
 					before:pointer-events-none before:absolute before:inset-0

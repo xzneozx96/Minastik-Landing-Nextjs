@@ -6,7 +6,7 @@ import { BorderBeam } from './ui/border-beam';
 export default function MinastikFeatures() {
 	return (
 		<section>
-			<div className='mx-auto max-w-6xl px-4 sm:px-6 pt-[150px]'>
+			<div className='mx-auto max-w-7xl px-4 sm:px-6 pt-[150px]'>
 				<div className='pb-12 md:pb-20 relative spotlight-background'>
 					{/* Section header */}
 					<div className='mx-auto max-w-3xl pb-12 text-center md:pb-20'>

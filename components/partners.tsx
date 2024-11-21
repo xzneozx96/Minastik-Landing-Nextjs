@@ -48,11 +48,11 @@ export default function Partners() {
 		},
 		{
 			name: 'Laoscitec',
-			logo: '/images/partner-logo/Laoscitec.jpg',
+			logo: '/images/partner-logo/Laoscitec.png',
 		},
 		{
-			name: 'GMO',
-			logo: '/images/partner-logo/Logo-GMO.jpg',
+			name: 'Great Pharmed',
+			logo: '/images/partner-logo/Great-Pharmed.png',
 		},
 		{
 			name: 'Tima',
@@ -99,12 +99,12 @@ export default function Partners() {
 			logo: '/images/partner-logo/MKSmart.png',
 		},
 		{
-			name: 'Mama Sữa non',
-			logo: '/images/partner-logo/TNHH-MamaSuanon.png',
+			name: 'GMO',
+			logo: '/images/partner-logo/Logo-GMO.png',
 		},
 		{
 			name: 'VCCI',
-			logo: '/images/partner-logo/VCCI.webp',
+			logo: '/images/partner-logo/VCCI.png',
 		},
 		{
 			name: 'Thiện Giác Chay',
@@ -183,8 +183,11 @@ export default function Partners() {
 						>
 							{firstRow.map((logo, index) => (
 								<div
-									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									className='relative flex justify-center items-center rounded-lg p-6'
 									key={index}
+									style={{
+										background: 'hsla(0,0%,100%,.06)',
+									}}
 								>
 									<Image
 										src={logo.logo}
@@ -192,6 +195,9 @@ export default function Partners() {
 										width={150}
 										height={150}
 										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+										style={{
+											filter: 'contrast(0%) brightness(2)',
+										}}
 									/>
 								</div>
 							))}
@@ -205,8 +211,11 @@ export default function Partners() {
 						>
 							{secondRow.map((logo, index) => (
 								<div
-									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									className='relative flex justify-center items-center rounded-lg p-6'
 									key={index}
+									style={{
+										background: 'hsla(0,0%,100%,.06)',
+									}}
 								>
 									<Image
 										src={logo.logo}
@@ -214,6 +223,9 @@ export default function Partners() {
 										width={150}
 										height={150}
 										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+										style={{
+											filter: 'contrast(0%) brightness(2)',
+										}}
 									/>
 								</div>
 							))}
@@ -226,8 +238,11 @@ export default function Partners() {
 						>
 							{thirdRow.map((logo, index) => (
 								<div
-									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									className='relative flex justify-center items-center rounded-lg p-6'
 									key={index}
+									style={{
+										background: 'hsla(0,0%,100%,.06)',
+									}}
 								>
 									<Image
 										src={logo.logo}
@@ -235,6 +250,9 @@ export default function Partners() {
 										width={150}
 										height={150}
 										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+										style={{
+											filter: 'contrast(0%) brightness(2)',
+										}}
 									/>
 								</div>
 							))}
@@ -248,8 +266,11 @@ export default function Partners() {
 						>
 							{fourthRow.map((logo, index) => (
 								<div
-									className='relative flex justify-center items-center bg-white rounded-lg p-6'
+									className='relative flex justify-center items-center rounded-lg p-6'
 									key={index}
+									style={{
+										background: 'hsla(0,0%,100%,.06)',
+									}}
 								>
 									<Image
 										src={logo.logo}
@@ -257,6 +278,9 @@ export default function Partners() {
 										width={150}
 										height={150}
 										className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+										style={{
+											filter: 'contrast(0%) brightness(2)',
+										}}
 									/>
 								</div>
 							))}

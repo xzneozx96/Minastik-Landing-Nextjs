@@ -1,43 +1,23 @@
-import Image from 'next/image';
-import BlurredShape from '@/public/images/blurred-shape.svg';
-import { SparklesCore } from './ui/sparkles';
+import { BorderBeam } from './ui/border-beam';
+import SplineCuteRobot from './ui/spline-cute-robot';
 
 export default function Cta() {
 	return (
-		<section className='relative overflow-hidden'>
-			<div
-				className='pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2'
-				aria-hidden='true'
-			>
-				<Image
-					className='max-w-none'
-					src={BlurredShape}
-					width={760}
-					height={668}
-					alt='Blurred shape'
-				/>
-			</div>
-			<div className='max-w6xl mx-auto px-4 sm:px-6'>
-				<div className='bg-gradient-to-r from-transparent via-gray-800/50 py-12 md:py-20'>
-					<div className='absolute w-full h-full top-0 bottom-0 pointer-events-none select-none'>
-						<SparklesCore
-							id='cta-sparkle'
-							background='transparent'
-							minSize={0.6}
-							maxSize={1.4}
-							particleDensity={10}
-							className='w-full h-full'
-							particleColor='#60a5fa'
-						/>
-					</div>
-					<div className='mx-auto max-w-3xl text-center'>
-						<h2
-							className='animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl'
-							data-aos='fade-up'
-						>
-							Join the content-first platform
+		<section className='relative overflow-hidden  spotlight-background'>
+			<div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
+				<div className='relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 rounded-2xl bg-gradient-to-br from-gray-900/50 via-gray-800/25 to-gray-900/50 p-5 backdrop-blur-sm transition-opacity before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]'>
+					<BorderBeam />
+
+					<div className='mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
+						<h2 className='text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl'>
+							Discover the Future of AI Today!
 						</h2>
-						<div className='mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center'>
+						<p className='mt-6 text-pretty text-lg/8 text-gray-300'>
+							Chat with Alise - our AI agents to experience intelligent
+							solutions in action. Ask anything about our business and see how
+							we can transform yours.
+						</p>
+						<div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-start'>
 							<div
 								data-aos='fade-up'
 								data-aos-delay={400}
@@ -47,7 +27,7 @@ export default function Cta() {
 									href='#0'
 								>
 									<span className='relative inline-flex items-center'>
-										Start Building
+										Talk with Alise
 										{/* <span className='ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5'>
 											-&gt;
 										</span> */}
@@ -59,7 +39,7 @@ export default function Cta() {
 								data-aos-delay={600}
 							>
 								<a
-									className='btn relative w-full bg-gradient-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto'
+									className='btn relative w-full bg-gradient-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:w-auto'
 									href='#0'
 								>
 									Schedule Demo
@@ -67,8 +47,18 @@ export default function Cta() {
 							</div>
 						</div>
 					</div>
+					<div className='relative mt-16 h-80 lg:mt-8'>
+						<img
+							className='absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10 z-[-1]'
+							src='/images/AI-calendar.avif'
+							alt='App screenshot'
+							width='1824'
+							height='1080'
+						/>
+					</div>
 				</div>
 			</div>
+			{/* <SplineCuteRobot /> */}
 		</section>
 	);
 }
