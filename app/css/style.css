@@ -30,7 +30,7 @@
 	margin: 0 auto;
 	z-index: -1;
 	position: absolute;
-	top: -480px;
+	top: -400px;
 	transform: translate(-50%);
 	left: 50%;
 	-webkit-mask-image: radial-gradient(
@@ -209,7 +209,7 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
-	animation: 6s infinite cubic-bezier(0.6, 0.6, 0, 1);
+	animation: 4s infinite cubic-bezier(0.6, 0.6, 0, 1);
 }
 
 @keyframes smart-line-1 {

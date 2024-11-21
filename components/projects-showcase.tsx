@@ -7,96 +7,92 @@ export function ProjectsShowcase() {
 }
 export const products = [
 	{
-		title: 'Moonbeam',
+		title: 'WAP Internal System',
 		link: 'https://gomoonbeam.com',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/moonbeam.png',
+			'https://minastik.com/wp-content/uploads/2024/11/Untitled-design.png',
 	},
 	{
-		title: 'Cursor',
-		link: 'https://cursor.so',
+		title: 'Innovate Vietnam 2024',
+		link: 'https://innovatevn.nic.gov.vn/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/cursor.png',
+			'https://minastik.com/wp-content/uploads/2024/10/Screenshot_9-10-2024_113645_innovatevn.nic_.gov_.vn_-scaled.jpeg',
 	},
 	{
-		title: 'Rogue',
-		link: 'https://userogue.com',
+		title: 'Ben Sealing',
+		link: 'https://bensealing.com.au/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/rogue.png',
+			'https://minastik.com/wp-content/uploads/2024/09/Untitled-design-3.png',
 	},
 
 	{
-		title: 'Editorially',
+		title: 'Ngọa Vân Am',
 		link: 'https://editorially.org',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/editorially.png',
+			'https://minastik.com/wp-content/uploads/2024/09/Untitled-design-2.png',
 	},
 	{
-		title: 'Editrix AI',
-		link: 'https://editrix.ai',
+		title: 'Nem Nem_Nom Nom',
+		link: 'https://www.nemnoms.co.uk/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/editrix.png',
+			'https://minastik.com/wp-content/uploads/2024/04/nemnoms.co_.uk_.png',
 	},
 	{
-		title: 'Pixel Perfect',
-		link: 'https://app.pixelperfect.quest',
+		title: 'Spero Coffee',
+		link: 'https://sperocoffee.com/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/pixelperfect.png',
-	},
-
-	{
-		title: 'Algochurn',
-		link: 'https://algochurn.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/algochurn.png',
-	},
-	{
-		title: 'Aceternity UI',
-		link: 'https://ui.aceternity.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/aceternityui.png',
-	},
-	{
-		title: 'Tailwind Master Kit',
-		link: 'https://tailwindmasterkit.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png',
-	},
-	{
-		title: 'SmartBridge',
-		link: 'https://smartbridgetech.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/smartbridge.png',
-	},
-	{
-		title: 'Renderwork Studio',
-		link: 'https://renderwork.studio',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/renderwork.png',
+			'https://minastik.com/wp-content/uploads/2024/04/sperocoffee.com_.png',
 	},
 
 	{
-		title: 'Creme Digital',
-		link: 'https://cremedigital.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/cremedigital.png',
+		title: 'Chay Thiện Giác',
+		link: 'https://thiengiac.vn/',
+		thumbnail: 'https://minastik.com/wp-content/uploads/2024/04/thiengiac.png',
 	},
 	{
-		title: 'Golden Bells Academy',
-		link: 'https://goldenbellsacademy.com',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png',
+		title: 'Long Cổ Trấn',
+		link: 'https://longcotran.com/',
+		thumbnail: 'https://minastik.com/wp-content/uploads/2024/04/longcotran.png',
 	},
 	{
-		title: 'Invoker Labs',
-		link: 'https://invoker.lol',
+		title: 'Colos Multi Việt Nam',
+		link: 'https://suanoncolosmulti.minastik.com/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/invoker.png',
+			'https://minastik.com/wp-content/uploads/2024/04/suanoncolosmulti.vn_.png',
 	},
 	{
-		title: 'E Free Invoice',
-		link: 'https://efreeinvoice.com',
+		title: 'Cooken Trading',
+		link: 'https://cooken.minastik.com/',
 		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png',
+			'https://minastik.com/wp-content/uploads/2024/04/cookentrading.com_.vn_.png',
+	},
+	{
+		title: 'Wildboar PC',
+		link: 'https://wbpc.vn/',
+		thumbnail: 'https://minastik.com/wp-content/uploads/2024/04/wbpc.vn_.png',
+	},
+
+	{
+		title: 'Great Pharmed',
+		link: 'https://greatpharmed.com/',
+		thumbnail:
+			'https://minastik.com/wp-content/uploads/2024/04/greatpharmed.com_.png',
+	},
+	{
+		title: 'Laoscitec',
+		link: 'https://laoscitec.com/',
+		thumbnail:
+			'https://minastik.com/wp-content/uploads/2024/04/laoscitec.com_.png',
+	},
+	{
+		title: 'Tranh Việt',
+		link: 'https://tranhviet.minastik.com/trang-chu',
+		thumbnail: 'https://minastik.com/wp-content/uploads/2024/04/tranhviet.png',
+	},
+	{
+		title: 'Petit Souris Cakes',
+		link: 'https://petitsouriscakes.com.au/',
+		thumbnail:
+			'https://minastik.com/wp-content/uploads/2024/04/petitsouriscakes.com_.au_.png',
 	},
 ];

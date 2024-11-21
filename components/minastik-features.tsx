@@ -24,6 +24,7 @@ export default function MinastikFeatures() {
 							favorite programming languages.
 						</p>
 					</div>
+
 					{/* Spotlight items */}
 					<Spotlight className='group mx-auto grid grid-rows-[auto_auto_auto] gap-6 md:grid-cols-5 md:gap-8'>
 						{/* Card 1 */}

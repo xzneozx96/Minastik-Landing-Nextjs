@@ -85,7 +85,7 @@ export default function HeroHome() {
 
 				<SplineRobot />
 
-				{/* <div className='absolute top-0 bottom-0 pointer-events-none select-none'>
+				<div className='absolute top-0 bottom-0 pointer-events-none select-none'>
 					<SparklesCore
 						id='hero-sparkle'
 						background='transparent'
@@ -96,7 +96,7 @@ export default function HeroHome() {
 						className='w-full h-full'
 						particleColor='#32A7FF'
 					/>
-				</div> */}
+				</div>
 
 				{/* </div> */}
 			</div>
