@@ -67,6 +67,7 @@ export default function MinastikFeatures() {
 										autoPlay
 										muted
 										loop
+										className='mix-blend-plus-lighter rounded-lg'
 									>
 										<source
 											src={'videos//iot-solutions.mp4'}
@@ -97,6 +98,7 @@ export default function MinastikFeatures() {
 										autoPlay
 										muted
 										loop
+										className='mix-blend-plus-lighter rounded-lg'
 									>
 										<source
 											src={'videos//web-design.mp4'}
@@ -147,6 +149,7 @@ export default function MinastikFeatures() {
 										autoPlay
 										muted
 										loop
+										className='mix-blend-plus-lighter rounded-lg'
 									>
 										<source
 											src={'videos//management-system.mp4'}
@@ -221,6 +224,7 @@ export default function MinastikFeatures() {
 										autoPlay
 										muted
 										loop
+										className='mix-blend-plus-lighter rounded-lg'
 										style={{
 											height: '340px',
 											width: '100%',
