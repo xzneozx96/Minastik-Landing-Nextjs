@@ -78,7 +78,7 @@ export default function Partners() {
 						{rows.flat().map((logo, index) => (
 							<div
 								key={index}
-								className='relative flex justify-center items-center rounded-lg p-6 spotlight-background'
+								className='relative flex justify-center items-center rounded-lg p-6 spotlight-background h-[150px]'
 								style={{
 									background: 'hsla(0,0%,100%,.06)',
 								}}
@@ -87,8 +87,8 @@ export default function Partners() {
 									src={logo.logo}
 									alt={logo.name}
 									width={150}
-									height={150}
-									className='relative h-[100px] w-[150px] object-contain mix-blend-normal'
+									height={100}
+									className='relative w-full h-full object-contain mix-blend-normal'
 									style={{
 										filter: 'contrast(0%) brightness(2)',
 									}}
