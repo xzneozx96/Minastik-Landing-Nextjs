@@ -9,7 +9,7 @@ export default function HeroHome() {
 			<div className='relative h-screen'>
 				{/* Hero content */}
 				{/* <div> */}
-				<div className='w-[1200px] px-4 sm:px-6 text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-35%] pointer-events-none select-none'>
+				<div className='mx-auto md:w-[1200px] w-full px-4 sm:px-6 text-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-35%] pointer-events-none select-none'>
 					{/* <AnimatedRainbowTextWithBorder /> */}
 					<BlurFade
 						inView
@@ -25,17 +25,7 @@ export default function HeroHome() {
 						inView
 					>
 						<h1 className='animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-8xl pointer-events-none select-none'>
-							Transform your business
-						</h1>
-					</BlurFade>
-
-					<BlurFade
-						delay={4.25}
-						duration={1}
-						inView
-					>
-						<h1 className='animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-8xl pointer-events-none select-none'>
-							with the power of AI
+							Transform your business with the power of AI
 						</h1>
 					</BlurFade>
 
@@ -45,7 +35,7 @@ export default function HeroHome() {
 							delay={4.5}
 							duration={0.5}
 						>
-							<p className='mb-8 text-xl text-blue-200/65'>
+							<p className='mb-8 text-lg md:text-xl text-blue-200/65'>
 								Minastik takes the hassle out of running your business.
 								<br />
 								Click below to see how we can help you succeed!
