@@ -59,6 +59,7 @@ export default function Cta() {
 							autoPlay
 							muted
 							loop
+							playsInline
 							className='md:h-auto md:object-none h-full object-cover'
 						></video>
 					</div>
@@ -69,6 +70,7 @@ export default function Cta() {
 							src='/videos/ai-chatbot.mp4'
 							autoPlay
 							muted
+							playsInline
 							className='h-full w-full mix-blend-screen'
 						></video>
 					</div>
