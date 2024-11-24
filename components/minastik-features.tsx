@@ -106,7 +106,7 @@ export default function MinastikFeatures() {
 										muted
 										loop
 										playsInline
-										className='rounded-lg h-full object-cover'
+										className='rounded-lg md:h-full object-cover'
 									>
 										<source
 											src={'videos//interactive-design.mp4'}
@@ -158,7 +158,7 @@ export default function MinastikFeatures() {
 										muted
 										loop
 										playsInline
-										className='rounded-lg h-full object-cover'
+										className='rounded-lg md:h-full object-cover'
 									>
 										<source
 											src={'videos//iot-solution.mp4'}
