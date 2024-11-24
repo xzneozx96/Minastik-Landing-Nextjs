@@ -1,7 +1,13 @@
-import { WhyMinastikAnimation } from './why-minastik-animation';
-import Spotlight from './spotlight';
 import Image from 'next/image';
+import Spotlight from './spotlight';
 import { BorderBeam } from './ui/border-beam';
+import GridBackground from '@/public/images/grid-background.svg';
+import SpotlightBackground from '@/public/images/spotlight-background.png';
+import DedicatedSupport from '@/public/images/why-minastik/24h-support.webp';
+import SecureAndReliable from '@/public/images/why-minastik/secure-reliable-2.webp';
+import Scalable from '@/public/images/why-minastik/scalable.webp';
+import FlexibleWorkflow from '@/public/images/why-minastik/flexible.webp';
+import CostEfficient from '@/public/images/why-minastik/cost-efficient.webp';
 
 function Card({
 	badgeText,
@@ -18,9 +24,7 @@ function Card({
 		>
 			<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 flex flex-col glassy-card no-bg'>
 				<Image
-					src='/images/grid-background.svg'
-					width={996}
-					height={448}
+					src={GridBackground}
 					alt='spotlight-ray'
 					className='absolute h-full w-full top-0 left-0 object-cover'
 				/>
@@ -44,8 +48,6 @@ function Card({
 					<Image
 						className='d-block mx-auto object-cover w-full'
 						src={imageSrc}
-						width={460}
-						height={340}
 						alt={title}
 					/>
 				</div>
@@ -61,7 +63,7 @@ export default function WhyMinastik() {
 			title: '24/7 Dedicated Support',
 			description:
 				'No matter the time of day, Minastik AI agents are always available to tackle your inquiries and provide swift solutions to ensure your operations run smoothly.',
-			imageSrc: '/images/why-minastik/24h-support.webp',
+			imageSrc: DedicatedSupport,
 			colSpan: 'md:col-span-3',
 			hasBeam: true,
 		},
@@ -70,7 +72,7 @@ export default function WhyMinastik() {
 			title: 'Secure & Reliable',
 			description:
 				'Protect your data and operations with our state-of-the-art security measures, giving you peace of mind as you focus on growing your business.',
-			imageSrc: '/images/why-minastik/secure-reliable-2.webp',
+			imageSrc: SecureAndReliable,
 			colSpan: 'md:col-span-3',
 			hasBeam: true,
 		},
@@ -79,7 +81,7 @@ export default function WhyMinastik() {
 			title: 'Scalable for Growth',
 			description:
 				'Our solutions grow with your business, allowing you to seamlessly expand without disruptions.',
-			imageSrc: '/images/why-minastik/scalable.webp',
+			imageSrc: Scalable,
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
@@ -88,7 +90,7 @@ export default function WhyMinastik() {
 			title: 'Flexible Workflows',
 			description:
 				'With AGILE as the backbone of our approach, we adapt quickly to sudden changes without compromising quality.',
-			imageSrc: '/images/why-minastik/flexible.webp',
+			imageSrc: FlexibleWorkflow,
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
@@ -97,7 +99,7 @@ export default function WhyMinastik() {
 			title: 'Cost Efficient',
 			description:
 				'Simplify complex processes with intelligent tools designed to save time, reduce effort, and improve productivity.',
-			imageSrc: '/images/why-minastik/cost-efficient.webp',
+			imageSrc: CostEfficient,
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
@@ -121,9 +123,7 @@ export default function WhyMinastik() {
 			<div className='mx-auto max-w-7xl px-4 sm:px-6'>
 				<div className='py-20 md:pb-[150px] md:pt-60'>
 					<Image
-						src='/images/spotlight-background.png'
-						width={1440}
-						height={1908}
+						src={SpotlightBackground}
 						alt='spotlight-ray'
 						className='absolute h-full w-full top-0 left-0 object-contain'
 					/>

@@ -86,8 +86,6 @@ export default function Partners() {
 								<Image
 									src={logo.logo}
 									alt={logo.name}
-									width={150}
-									height={100}
 									className='relative w-full h-full object-contain mix-blend-normal'
 									style={{
 										filter: 'contrast(0%) brightness(2)',
