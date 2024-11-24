@@ -40,13 +40,13 @@ export default function MinastikFeatures() {
 							href='#0'
 						>
 							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 glassy-card'>
-								<Image
+								{/* <Image
 									src='/images/spotlight-ray.png'
 									width={996}
 									height={448}
 									alt='spotlight-ray'
 									className='absolute h-full w-full top-0 left-0 object-cover'
-								/>
+								/> */}
 
 								<BorderBeam />
 
@@ -68,15 +68,16 @@ export default function MinastikFeatures() {
 									</p>
 								</div>
 
-								<div className='pt-6'>
+								<div className='pt-6 z-10'>
 									<video
 										autoPlay
 										muted
 										loop
-										className='mix-blend-plus-lighter rounded-lg'
+										playsInline
+										className='rounded-lg'
 									>
 										<source
-											src={'videos//iot-solutions.mp4'}
+											src={'videos//tailor-made-system-light.mp4'}
 											type='video/mp4'
 										/>
 										Your browser does not support the video tag.
@@ -91,23 +92,24 @@ export default function MinastikFeatures() {
 							href='#0'
 						>
 							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 glassy-card'>
-								<Image
+								{/* <Image
 									src='/images/spotlight-ray.png'
 									width={996}
 									height={448}
 									alt='spotlight-ray'
 									className='absolute h-full w-full top-0 left-0 object-cover'
-								/>
+								/> */}
 
-								<div className='pb-6'>
+								<div className='pb-6 flex-1 z-10'>
 									<video
 										autoPlay
 										muted
 										loop
-										className='mix-blend-plus-lighter rounded-lg'
+										playsInline
+										className='rounded-lg h-full object-cover'
 									>
 										<source
-											src={'videos//web-design.mp4'}
+											src={'videos//interactive-design.mp4'}
 											type='video/mp4'
 										/>
 										Your browser does not support the video tag.
@@ -125,12 +127,12 @@ export default function MinastikFeatures() {
 									</div>
 
 									<h4 className='text-xl md:text-3xl mb-2 bg-gradient-to-r from-[#d8ecf8] to-[#98c0ef] bg-clip-text'>
-										Modern Web Design
+										Design & Development
 									</h4>
 
 									<p className='text-indigo-200/70 md:text-lg'>
-										Design and publish modern websites at any scale, fully
-										customized on your own with the latest technologies.
+										We deliver more than just a landing page with interactive
+										motion design, fully customizable and scalable to any level.
 									</p>
 								</div>
 							</div>
@@ -142,23 +144,24 @@ export default function MinastikFeatures() {
 							href='#0'
 						>
 							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 glassy-card'>
-								<Image
+								{/* <Image
 									src='/images/spotlight-ray.png'
 									width={996}
 									height={448}
 									alt='spotlight-ray'
 									className='absolute h-full w-full top-0 left-0 object-cover'
-								/>
+								/> */}
 
-								<div className='pb-6 relative'>
+								<div className='pb-6 z-10 flex-1'>
 									<video
 										autoPlay
 										muted
 										loop
-										className='mix-blend-plus-lighter rounded-lg'
+										playsInline
+										className='rounded-lg h-full object-cover'
 									>
 										<source
-											src={'videos//management-system.mp4'}
+											src={'videos//iot-solution.mp4'}
 											type='video/mp4'
 										/>
 										Your browser does not support the video tag.
@@ -193,13 +196,13 @@ export default function MinastikFeatures() {
 							href='#0'
 						>
 							<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 glassy-card'>
-								<Image
+								{/* <Image
 									src='/images/spotlight-ray.png'
 									width={996}
 									height={448}
 									alt='spotlight-ray'
 									className='absolute h-full w-full top-0 left-0 object-cover'
-								/>
+								/> */}
 
 								<BorderBeam />
 
@@ -224,21 +227,16 @@ export default function MinastikFeatures() {
 									</p>
 								</div>
 
-								<div className='pt-6'>
+								<div className='pt-6 z-10'>
 									<video
 										autoPlay
 										muted
 										loop
-										className='mix-blend-plus-lighter rounded-lg'
-										style={{
-											height: '340px',
-											width: '100%',
-											objectFit: 'cover',
-											objectPosition: '50% 64%',
-										}}
+										playsInline
+										className='rounded-lg'
 									>
 										<source
-											src={'videos//ai-assistant.mp4'}
+											src={'videos//ai-automation.mp4'}
 											type='video/mp4'
 										/>
 										Your browser does not support the video tag.

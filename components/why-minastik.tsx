@@ -105,7 +105,7 @@ export default function WhyMinastik() {
 
 	return (
 		<section className='relative'>
-			<div className='cool-animation'>
+			<div className='cool-animation hidden md:block'>
 				<video
 					autoPlay
 					muted
@@ -119,7 +119,7 @@ export default function WhyMinastik() {
 				</video>
 			</div>
 			<div className='mx-auto max-w-7xl px-4 sm:px-6'>
-				<div className='py-12 md:pb-[150px] pt-60'>
+				<div className='py-20 md:pb-[150px] md:pt-60'>
 					<Image
 						src='/images/spotlight-background.png'
 						width={1440}
