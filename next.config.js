@@ -4,15 +4,15 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'aceternity.com',
-				port: '',
-				pathname: '/images/products/thumbnails/new/**',
-			},
-			{
-				protocol: 'https',
 				hostname: 'minastik.com',
 				port: '',
 				pathname: '/wp-content/uploads/**',
+			},
+			{
+				protocol: 'https',
+				hostname: 'res.cloudinary.com',
+				port: '',
+				pathname: '/dxtyxxn3y/image/upload/**',
 			},
 		],
 	},
