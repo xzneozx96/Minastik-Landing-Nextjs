@@ -73,7 +73,20 @@ export default function HeroHome() {
 						videoHeight={1080}
 					/> */}
 
-				<SplineRobot />
+				{/* <SplineRobot /> */}
+				<video
+					autoPlay
+					muted
+					loop
+					playsInline
+					className='h-screen w-screen object-cover mix-blend-lighten'
+				>
+					<source
+						src={'videos//robot-48fps.mp4'}
+						type='video/mp4'
+					/>
+					Your browser does not support the video tag.
+				</video>
 
 				<div className='absolute top-0 bottom-0 pointer-events-none select-none'>
 					<SparklesCore

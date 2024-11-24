@@ -6,6 +6,7 @@ import localFont from 'next/font/local';
 
 import Header from '@/components/ui/header';
 import SmoothScrolling from '../components/smooth-scroll';
+import Script from 'next/script';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -67,6 +68,28 @@ export default function RootLayout({
 						{children}
 					</div>
 				</SmoothScrolling>
+
+				<Script
+					id='voiceflow-chat-widget'
+					type='text/javascript'
+					strategy='lazyOnload' // Ensures the script loads after the page content
+				>
+					{`
+          (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '66207aa2befcd3484056d86a' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; 
+            v.type = "text/javascript"; 
+            s.parentNode.insertBefore(v, s);
+          })(document, 'script');
+        `}
+				</Script>
 			</body>
 		</html>
 	);

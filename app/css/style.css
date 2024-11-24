@@ -365,6 +365,10 @@
 	padding: 30px;
 }
 
+.glassy-card.no-bg {
+	background: none;
+}
+
 .glassy-card:before {
 	background: linear-gradient(
 			180deg,

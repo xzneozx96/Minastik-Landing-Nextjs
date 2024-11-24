@@ -3,9 +3,10 @@ export default function Cta() {
 		<section className='relative overflow-hidden'>
 			<div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
 				<div
-					className='relative isolate overflow-hidden px-6 py-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 rounded-2xl'
+					className='relative isolate overflow-hidden px-6 py-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 md:pb-0 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 rounded-2xl'
 					data-aos='zoom-in-up'
 				>
+					<div className='absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter'></div>
 					<div className='mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left z-10'>
 						<h2
 							className='text-balance text-3xl font-semibold tracking-tight text-white md:text-5xl sm:text-center lg:text-left'
@@ -19,7 +20,7 @@ export default function Cta() {
 							data-aos='fade-up'
 							data-aos-delay={1300}
 						>
-							Chat with Alise - our AI agents to experience intelligent
+							Chat with Zober - our AI agents to experience intelligent
 							solutions in action. Ask anything about our business and see how
 							we can transform yours.
 						</p>

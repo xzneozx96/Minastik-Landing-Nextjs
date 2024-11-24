@@ -78,9 +78,9 @@ export default function Partners() {
 						{rows.flat().map((logo, index) => (
 							<div
 								key={index}
-								className='relative flex justify-center items-center rounded-lg p-6 spotlight-background h-[150px]'
+								className='relative flex justify-center items-center rounded-lg p-6 h-[150px]'
 								style={{
-									background: 'hsla(0,0%,100%,.06)',
+									background: 'hsla(0,0%,100%,.03)',
 								}}
 							>
 								<Image
