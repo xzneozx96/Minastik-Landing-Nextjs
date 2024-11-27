@@ -14,13 +14,13 @@ function Card({
 	title,
 	description,
 	imageSrc,
+	videoSrc,
 	colSpan,
 	hasBeam,
 }: any) {
 	return (
-		<a
+		<div
 			className={`group/card relative h-full overflow-hidden rounded-2xl p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-indigo-500/20 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100 grid grid-rows-subgrid ${colSpan}`}
-			href='#0'
 		>
 			<div className='relative z-20 h-full overflow-hidden rounded-[inherit] after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 flex flex-col glassy-card no-bg'>
 				<Image
@@ -29,7 +29,7 @@ function Card({
 					className='absolute h-full w-full top-0 left-0 object-cover'
 				/>
 
-				{hasBeam && <BorderBeam />}
+				{/* {hasBeam && <BorderBeam />} */}
 
 				<div className='relative z-10'>
 					<div className='mb-5'>
@@ -44,15 +44,29 @@ function Card({
 					</h4>
 					<p className='text-indigo-200/70 md:text-lg'>{description}</p>
 				</div>
-				<div className='pt-6 flex-1 flex justify-center items-center img-3D'>
-					<Image
+				<div className='pt-6 flex-1 flex justify-center items-center z-10'>
+					{/* <Image
 						className='d-block mx-auto object-cover w-full'
 						src={imageSrc}
 						alt={title}
-					/>
+					/> */}
+
+					<video
+						autoPlay
+						muted
+						loop
+						playsInline
+						className='rounded-lg'
+					>
+						<source
+							src={videoSrc}
+							type='video/mp4'
+						/>
+						Your browser does not support the video tag.
+					</video>
 				</div>
 			</div>
-		</a>
+		</div>
 	);
 }
 
@@ -64,6 +78,7 @@ export default function WhyMinastik() {
 			description:
 				'No matter the time of day, Minastik AI agents are always available to tackle your inquiries and provide swift solutions to ensure your operations run smoothly.',
 			imageSrc: DedicatedSupport,
+			videoSrc: 'videos//ai-chatbot-support.mp4',
 			colSpan: 'md:col-span-3',
 			hasBeam: true,
 		},
@@ -73,6 +88,7 @@ export default function WhyMinastik() {
 			description:
 				'Protect your data and operations with our state-of-the-art security measures, giving you peace of mind as you focus on growing your business.',
 			imageSrc: SecureAndReliable,
+			videoSrc: 'videos//secure-reliable.mp4',
 			colSpan: 'md:col-span-3',
 			hasBeam: true,
 		},
@@ -82,6 +98,7 @@ export default function WhyMinastik() {
 			description:
 				'Our solutions grow with your business, allowing you to seamlessly expand without disruptions.',
 			imageSrc: Scalable,
+			videoSrc: 'videos//built-for-growth.mp4',
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
@@ -89,8 +106,9 @@ export default function WhyMinastik() {
 			badgeText: 'Agile & Scrum',
 			title: 'Flexible Workflows',
 			description:
-				'With AGILE as the backbone of our approach, we adapt quickly to sudden changes without compromising quality.',
+				'With AGILE as the backbone, we adapt quickly to changes without compromising quality.',
 			imageSrc: FlexibleWorkflow,
+			videoSrc: 'videos//flexible-workflow.mp4',
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
@@ -98,8 +116,9 @@ export default function WhyMinastik() {
 			badgeText: 'High-performance Solutions',
 			title: 'Cost Efficient',
 			description:
-				'Simplify complex processes with intelligent tools designed to save time, reduce effort, and improve productivity.',
+				'Simplify complex processes with intelligent tools designed to save time and improve productivity.',
 			imageSrc: CostEfficient,
+			videoSrc: 'videos//cost-efficient.mp4',
 			colSpan: 'md:col-span-2',
 			hasBeam: false,
 		},
