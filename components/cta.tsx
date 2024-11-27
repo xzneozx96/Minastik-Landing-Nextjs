@@ -33,7 +33,7 @@ export default function Cta() {
 									href='#0'
 								>
 									<span className='relative inline-flex items-center'>
-										Talk with Alise
+										Talk with Zober
 									</span>
 								</a>
 							</div>
