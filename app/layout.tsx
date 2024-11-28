@@ -60,15 +60,15 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${inter.variable} ${nacelle.variable} ${grotek.variable} bg-[#00031a] font-grotesk text-base text-gray-200 antialiased`}
+				className={`${inter.variable} ${nacelle.variable} ${grotek.variable} bg-[#0B0C14] font-grotesk text-base text-gray-200 antialiased`}
 			>
+				{/* #00031a */}
 				<SmoothScrolling>
 					<div className='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'>
 						<Header />
 						{children}
 					</div>
 				</SmoothScrolling>
-
 				<Script
 					id='voiceflow-chat-widget'
 					type='text/javascript'

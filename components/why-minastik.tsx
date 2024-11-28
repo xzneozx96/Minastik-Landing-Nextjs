@@ -31,26 +31,7 @@ function Card({
 
 				{/* {hasBeam && <BorderBeam />} */}
 
-				<div className='relative z-10'>
-					<div className='mb-5'>
-						<span className='title-badge btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60'>
-							<span className='bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent'>
-								{badgeText}
-							</span>
-						</span>
-					</div>
-					<h4 className='text-xl md:text-3xl mb-2 bg-gradient-to-r from-[#d8ecf8] to-[#98c0ef] bg-clip-text'>
-						{title}
-					</h4>
-					<p className='text-indigo-200/70 md:text-lg'>{description}</p>
-				</div>
-				<div className='pt-6 flex-1 flex justify-center items-center z-10'>
-					{/* <Image
-						className='d-block mx-auto object-cover w-full'
-						src={imageSrc}
-						alt={title}
-					/> */}
-
+				<div className='pb-6 flex-1 flex justify-center items-center z-10'>
 					<video
 						autoPlay
 						muted
@@ -64,6 +45,18 @@ function Card({
 						/>
 						Your browser does not support the video tag.
 					</video>
+				</div>
+
+				<div className='relative z-10'>
+					{/* <div className='mb-5'>
+						<span className='title-badge btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.gray.700/.15),theme(colors.gray.700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60'>
+							<span className='bg-gradient-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent'>
+								{badgeText}
+							</span>
+						</span>
+					</div> */}
+					<h4 className='text-xl md:text-2xl mb-2 text-white'>{title}</h4>
+					<p className='text-indigo-200/70 md:text-lg'>{description}</p>
 				</div>
 			</div>
 		</div>
@@ -126,7 +119,7 @@ export default function WhyMinastik() {
 
 	return (
 		<section className='relative'>
-			<div className='cool-animation hidden md:block'>
+			<div className='cool-animation hidden md:block mix-blend-luminosity'>
 				<video
 					autoPlay
 					muted

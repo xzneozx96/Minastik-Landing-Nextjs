@@ -3,7 +3,7 @@ import { BlurFade } from './ui/blur-fade';
 import { SparklesCore } from './ui/sparkles';
 import SplineRobot from './ui/spline-3D-robot';
 
-export default function HeroHome() {
+export default function HeroHomeV1() {
 	return (
 		<section>
 			<div className='relative h-screen'>

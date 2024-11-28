@@ -6,6 +6,13 @@
 @import 'additional-styles/theme.css';
 @import 'tailwindcss/utilities';
 
+.bg-homepage-hero {
+	background-image: url('/images/hero-spotlight.jpg');
+	background-size: cover;
+	background-position: center top -20px;
+	background-repeat: no-repeat;
+}
+
 .spotlight-background::before {
 	content: '';
 	position: absolute;
