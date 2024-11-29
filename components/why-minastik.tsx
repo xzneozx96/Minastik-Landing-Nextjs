@@ -26,7 +26,7 @@ function Card({
 				<Image
 					src={GridBackground}
 					alt='spotlight-ray'
-					className='absolute h-full w-full top-0 left-0 object-cover'
+					className='absolute h-full w-full top-0 left-0 object-cover rotate-90'
 				/>
 
 				{/* {hasBeam && <BorderBeam />} */}
@@ -37,7 +37,7 @@ function Card({
 						muted
 						loop
 						playsInline
-						className='rounded-lg'
+						className='rounded-lg h-full object-cover'
 					>
 						<source
 							src={videoSrc}

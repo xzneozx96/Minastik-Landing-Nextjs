@@ -5,7 +5,7 @@ import { SparklesCore } from './ui/sparkles';
 export default function HeroHomeV2() {
 	return (
 		<section className='relative'>
-			<div className='bg-homepage-hero px-2 sm:px-5 pt-36 md:pt-40 pb-44 md:pb-52 mx-auto flex flex-col items-center text-center'>
+			<div className='bg-homepage-hero px-2 sm:px-5 pt-36 md:pt-40 pb-20 md:pb-52 mx-auto flex flex-col items-center text-center'>
 				<BlurFade
 					inView
 					delay={1}
@@ -18,13 +18,25 @@ export default function HeroHomeV2() {
 					delay={1.25}
 					duration={1}
 					inView
+					className='md:block hidden'
 				>
 					<h1 className='mt-5 mb-3 animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-7xl pointer-events-none select-none'>
-						Empower your business
+						Empower business with
 					</h1>
 
 					<h1 className='animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-3 font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-7xl pointer-events-none select-none'>
-						with AI-driven solutions
+						AI-powered solutions
+					</h1>
+				</BlurFade>
+
+				<BlurFade
+					delay={1.25}
+					duration={1}
+					inView
+					className='md:hidden block'
+				>
+					<h1 className='mt-5 animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.blue.200),theme(colors.gray.50),theme(colors.blue.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-4xl font-semibold text-transparent md:text-5xl lg:text-7xl pointer-events-none select-none'>
+						Empower business with AI solutions
 					</h1>
 				</BlurFade>
 
@@ -34,7 +46,7 @@ export default function HeroHomeV2() {
 						delay={1.5}
 						duration={0.5}
 					>
-						<p className='mt-4 mb-10 text-lg md:text-xl text-blue-200/65'>
+						<p className='mt-4 mb-10 md:text-xl text-blue-200/65'>
 							Minastik takes the hassle out of running your business.
 							<br />
 							Let's explore how we can help you succeed!
@@ -62,19 +74,22 @@ export default function HeroHomeV2() {
 				</div>
 			</div>
 
-			<video
-				autoPlay
-				playsInline
-				muted
-				loop
-				className='block mx-auto rounded-3xl'
-			>
-				<source
-					src={'videos//ai-chatbot-dribble.mp4'}
-					type='video/mp4'
-				/>
-				Your browser does not support the video tag.
-			</video>
+			<div className='glass-container mx-6 md:mx-auto w-fit'>
+				<div className='absolute -inset-3 bg-blue-500/60 blur-2xl filter'></div>
+				<video
+					autoPlay
+					playsInline
+					muted
+					loop
+					className='rounded-3xl z-10 relative'
+				>
+					<source
+						src={'videos//ai-chatbot-dribble.mp4'}
+						type='video/mp4'
+					/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
 		</section>
 	);
 }

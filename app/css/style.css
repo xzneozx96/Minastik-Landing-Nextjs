@@ -7,10 +7,16 @@
 @import 'tailwindcss/utilities';
 
 .bg-homepage-hero {
-	background-image: url('/images/hero-spotlight.jpg');
+	background-image: url('/images/hero-spotlight-mobile.jpg');
 	background-size: cover;
 	background-position: center top -20px;
 	background-repeat: no-repeat;
+}
+
+@media (min-width: 765px) {
+	.bg-homepage-hero {
+		background-image: url('/images/hero-spotlight.jpg');
+	}
 }
 
 .spotlight-background::before {
@@ -420,4 +426,14 @@
 video {
 	pointer-events: none;
 	user-select: none;
+}
+
+/* styles for glassy border */
+.glass-container {
+	position: relative;
+}
+
+.glass-container::before {
+	content: '';
+	@apply absolute -inset-3 rounded-[30px] border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
 }
