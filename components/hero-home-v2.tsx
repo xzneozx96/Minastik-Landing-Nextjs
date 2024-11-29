@@ -8,14 +8,13 @@ export default function HeroHomeV2() {
 			<div className='bg-homepage-hero px-2 sm:px-5 pt-36 md:pt-40 pb-20 md:pb-52 mx-auto flex flex-col items-center text-center'>
 				<BlurFade
 					inView
-					delay={1}
 					duration={0.5}
 				>
 					<AnimatedShinyTextWithBorder text='✨ Grow with Minastik' />
 				</BlurFade>
 
 				<BlurFade
-					delay={1.25}
+					delay={0.25}
 					duration={1}
 					inView
 					className='md:block hidden'
@@ -30,7 +29,7 @@ export default function HeroHomeV2() {
 				</BlurFade>
 
 				<BlurFade
-					delay={1.25}
+					delay={0.25}
 					duration={1}
 					inView
 					className='md:hidden block'
@@ -43,7 +42,7 @@ export default function HeroHomeV2() {
 				<div className='mx-auto max-w-3xl'>
 					<BlurFade
 						inView
-						delay={1.5}
+						delay={0.5}
 						duration={0.5}
 					>
 						<p className='mt-4 mb-10 md:text-xl text-blue-200/65'>
@@ -55,7 +54,7 @@ export default function HeroHomeV2() {
 					<div className='mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center'>
 						<BlurFade
 							inView
-							delay={1.75}
+							delay={0.75}
 							duration={0.5}
 						>
 							<a
@@ -74,7 +73,12 @@ export default function HeroHomeV2() {
 				</div>
 			</div>
 
-			<div className='glass-container mx-6 md:mx-auto w-fit'>
+			<div
+				className='glass-container mx-6 md:mx-auto w-fit'
+				data-aos='zoom-in-up'
+				data-aos-delay={1000}
+				data-aos-duration={800}
+			>
 				<div className='absolute -inset-3 bg-blue-500/60 blur-2xl filter'></div>
 				<video
 					autoPlay
