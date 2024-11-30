@@ -56,7 +56,10 @@ export function CanvasRevealEffectLogos() {
 		<>
 			<div className='grid grid-cols-2 gap-8 sm:grid-cols-4'>
 				{rows.flat().map((logo, index) => (
-					<Card logo={logo}>
+					<Card
+						logo={logo}
+						key={index}
+					>
 						<CanvasRevealEffect
 							animationSpeed={3}
 							containerClassName='bg-black'

@@ -3,80 +3,96 @@
 import Link from 'next/link';
 import Logo from './logo';
 import { BlurFade } from './blur-fade';
+import { useState } from 'react';
 
 export default function Header() {
-	return (
-		<header className='z-30 w-full fixed top-0 py-4 backdrop-blur-[12px]'>
-			<div className='mx-auto max-w-7xl px-4 sm:px-6'>
-				<div className='relative flex h-14 items-center justify-between gap-3 rounded-2xl'>
-					{/* tailwind css for round & border: bg-gray-900/90 px-3
-					before:pointer-events-none before:absolute before:inset-0
-					before:rounded-[inherit] before:border before:border-transparent
-					before:[background:linear-gradient(to_right,theme(colors.gray.800),theme(colors.gray.700),theme(colors.gray.800))_border-box]
-					before:[mask-composite:exclude_!important]
-					before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]
-					after:absolute after:inset-0 after:-z-10 after:backdrop-blur-sm */}
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-					{/* Site branding */}
-					<div className='flex flex-1 items-center'>
-						<BlurFade
-							inView
-							delay={4.25}
-						>
-							<Logo />
-						</BlurFade>
-					</div>
-					{/* Site navigation */}
-					<ul className='flex gap-20'>
-						<li className='text-blue-200'>
-							<BlurFade
-								inView
-								delay={4.5}
+	const handleMenuToggle = () => {
+		setIsMenuOpen((prevState) => !prevState);
+	};
+
+	const closeMenuOnNav = () => {
+		setIsMenuOpen((prevState) => false);
+	};
+
+	return (
+		<header className='fixed top-0 w-full flex sm:px-10 min-h-[70px] z-50 backdrop-blur-[12px]'>
+			<div className='relative mx-auto max-w-7xl px-4 sm:px-6 flex flex-wrap items-center justify-between gap-5 w-full'>
+				<Logo />
+
+				<div
+					id='collapseMenu'
+					className={`bg-[#0B0C14] h-[calc(100vh-70px)] duration-500 absolute md:static md:w-auto w-full md:h-auto flex md:items-center gap-[1.5vw] top-[100%] ${
+						isMenuOpen ? 'left-[0%]' : 'left-[-100%]'
+					} px-5 md:py-0 py-5 backdrop-blur-[12px]`}
+				>
+					<ul className='lg:flex gap-x-10 w-full'>
+						<li className='max-lg:py-3 px-3'>
+							<Link
+								href='/'
+								className='hover:text-[#60a5fa] text-[#60a5fa] block font-semibold text-[15px]'
+								onClick={closeMenuOnNav}
 							>
-								About Us
-							</BlurFade>
+								Home
+							</Link>
 						</li>
-						<li className='text-blue-200'>
-							<BlurFade
-								inView
-								delay={4.75}
+
+						<li className='max-lg:py-3 px-3'>
+							<Link
+								href='/signup'
+								className='hover:text-[#60a5fa] text-blue-200 block font-semibold text-[15px]'
+								onClick={closeMenuOnNav}
 							>
-								Projects
-							</BlurFade>
+								Portfolio
+							</Link>
 						</li>
-						<li className='text-blue-200'>
-							<BlurFade
-								inView
-								delay={5}
+
+						<li className='max-lg:py-3 px-3'>
+							<Link
+								href='/signup'
+								className='hover:text-[#60a5fa] text-blue-200 block font-semibold text-[15px]'
+								onClick={closeMenuOnNav}
 							>
 								Blogs
-							</BlurFade>
+							</Link>
 						</li>
-						<li className='text-blue-200'>
-							<BlurFade
-								inView
-								delay={5.25}
+
+						<li className='max-lg:py-3 px-3'>
+							<Link
+								href='/signup'
+								className='hover:text-[#60a5fa] text-blue-200 block font-semibold text-[15px]'
+								onClick={closeMenuOnNav}
 							>
-								Profile
-							</BlurFade>
+								About
+							</Link>
 						</li>
 					</ul>
-					{/* Desktop sign in links */}
-					<ul className='flex flex-1 items-center justify-end gap-3'>
-						<BlurFade
-							inView
-							delay={5.5}
+				</div>
+
+				<div className='flex max-lg:ml-auto space-x-4'>
+					<button className='px-4 py-2 rounded-lg text-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'>
+						Contact Us
+					</button>
+
+					<button
+						id='toggleOpen'
+						className='lg:hidden'
+						onClick={handleMenuToggle}
+					>
+						<svg
+							className='w-7 h-7'
+							fill='#fff'
+							viewBox='0 0 20 20'
+							xmlns='http://www.w3.org/2000/svg'
 						>
-							<li>
-								<Link
-									href='/signup'
-									className='btn-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'
-								>
-									Contact Us
-								</Link>
-							</li>
-						</BlurFade>
-					</ul>
+							<path
+								fillRule='evenodd'
+								d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
+								clipRule='evenodd'
+							></path>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
