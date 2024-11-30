@@ -84,7 +84,7 @@ const Card = ({
 		<div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className='group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto relative rounded-lg p-6 h-[200px] spotlight-background'
+			className='group/canvas-card flex items-center justify-center max-w-sm w-full mx-auto relative rounded-lg p-6 h-[200px]'
 			style={{
 				background: 'hsla(0,0%,100%,.03)',
 			}}

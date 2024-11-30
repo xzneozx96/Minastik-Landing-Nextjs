@@ -435,5 +435,17 @@ video {
 
 .glass-container::before {
 	content: '';
-	@apply absolute -inset-3 rounded-[30px] border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+	@apply absolute -inset-2 rounded-xl lg:rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+}
+
+.gradient-blur {
+	background: conic-gradient(
+		from 230.29deg at 51.63% 52.16%,
+		#2400ff 0deg,
+		#0087ff 67.5deg,
+		#6c279d 198.75deg,
+		#1826a3 251.25deg,
+		#3667c4 301.88deg,
+		#691eff
+	);
 }

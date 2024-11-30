@@ -41,12 +41,12 @@ export function AnimatedShinyTextWithBorder({ text }: { text: string }) {
 		<div className='z-10 flex items-center justify-center'>
 			<div
 				className={cn(
-					'backdrop-blur-[4px] inline-flex h-9 items-center justify-between rounded-full border border-white/10 text-xs text-white'
+					'backdrop-blur-[4px] inline-flex h-9 items-center justify-between rounded-full border text-white relative border-blue-100/20 bg-blue-200/10 py-2 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2 mt-6'
 				)}
-				style={{
-					background: `linear-gradient(0deg, rgba(153, 175, 255, 0.04), rgba(153, 175, 255, 0.04)), rgba(255, 255, 255, 0.02)`,
-					boxShadow: `inset 0 -6px 12px rgba(255, 255, 255, 0.04)`,
-				}}
+				// style={{
+				// 	background: `linear-gradient(0deg, rgba(153, 175, 255, 0.04), rgba(153, 175, 255, 0.04)), rgba(255, 255, 255, 0.02)`,
+				// 	boxShadow: `inset 0 -6px 12px rgba(255, 255, 255, 0.04)`,
+				// }}
 			>
 				<AnimatedShinyText className='inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400'>
 					<span>{text}</span>

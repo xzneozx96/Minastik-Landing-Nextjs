@@ -5,7 +5,7 @@ import { SparklesCore } from './ui/sparkles';
 export default function HeroHomeV2() {
 	return (
 		<section className='relative'>
-			<div className='bg-homepage-hero px-2 sm:px-5 pt-36 md:pt-40 pb-20 md:pb-52 mx-auto flex flex-col items-center text-center'>
+			<div className='bg-homepage-hero px-2 sm:px-5 pt-36 md:pt-40 pb-20 md:pb-32 mx-auto flex flex-col items-center text-center'>
 				<BlurFade
 					inView
 					duration={0.5}
@@ -74,18 +74,19 @@ export default function HeroHomeV2() {
 			</div>
 
 			<div
-				className='glass-container mx-6 md:mx-auto w-fit'
+				className='glass-container mx-6 md:mx-auto w-fit max-w-6xl'
 				data-aos='zoom-in-up'
 				data-aos-delay={1000}
 				data-aos-duration={800}
 			>
-				<div className='absolute -inset-3 bg-blue-500/60 blur-2xl filter'></div>
+				{/* <div className='absolute -inset-3 bg-blue-500/40 blur-2xl filter'></div> */}
+				<div className='absolute top-1/2 left-1/2 -z-10 gradient-blur w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]'></div>
 				<video
 					autoPlay
 					playsInline
 					muted
 					loop
-					className='rounded-3xl z-10 relative'
+					className='rounded-lg lg:rounded-lg z-10 relative'
 				>
 					<source
 						src={'videos//ai-chatbot-dribble.mp4'}
