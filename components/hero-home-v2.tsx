@@ -80,7 +80,7 @@ export default function HeroHomeV2() {
 				data-aos-duration={1000}
 			>
 				{/* <div className='absolute -inset-3 bg-blue-500/40 blur-2xl filter'></div> */}
-				<div className='absolute top-1/2 left-1/2 gradient-blur w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]'></div>
+				<div className='absolute top-1/2 left-1/2 gradient-blur w-[85%] -translate-x-1/2 h-[85%] -translate-y-1/2 inset-0 blur-[10rem]'></div>
 				<video
 					autoPlay
 					playsInline

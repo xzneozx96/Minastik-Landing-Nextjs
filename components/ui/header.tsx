@@ -17,13 +17,13 @@ export default function Header() {
 	};
 
 	return (
-		<header className='fixed top-0 w-full flex sm:px-10 min-h-[70px] z-50 backdrop-blur-[12px]'>
-			<div className='relative mx-auto max-w-7xl px-4 sm:px-6 flex flex-wrap items-center justify-between gap-5 w-full'>
+		<header className='fixed top-0 md:top-5 w-full flex sm:px-10 min-h-[70px] z-50'>
+			<div className='relative mx-auto max-w-4xl px-4 sm:px-6 flex flex-wrap items-center justify-between gap-5 w-full md:rounded-full backdrop-blur-[10px] bg-[#0a0d1fcc] border border-[#232d6b]'>
 				<Logo />
 
 				<div
 					id='collapseMenu'
-					className={`bg-[#0B0C14] h-[calc(100vh-70px)] duration-500 absolute md:static md:w-auto w-full md:h-auto flex md:items-center gap-[1.5vw] top-[100%] ${
+					className={`bg-[#0a0d1fcc] md:bg-transparent h-[calc(100vh-70px)] duration-500 absolute md:static md:w-auto w-full md:h-auto flex md:items-center gap-[1.5vw] top-[100%] ${
 						isMenuOpen ? 'left-[0%]' : 'left-[-100%]'
 					} px-5 md:py-0 py-5 backdrop-blur-[12px]`}
 				>
@@ -71,7 +71,7 @@ export default function Header() {
 				</div>
 
 				<div className='flex max-lg:ml-auto space-x-4'>
-					<button className='px-4 py-2 rounded-lg text-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'>
+					<button className='px-4 py-2 rounded-lg md:rounded-full text-sm bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]'>
 						Contact Us
 					</button>
 
