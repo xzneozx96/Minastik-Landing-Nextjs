@@ -1,11 +1,9 @@
 import './css/style.css';
 
-import { Inter } from 'next/font/google';
-import { Space_Grotesk } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import localFont from 'next/font/local';
 
 import Header from '@/components/ui/header';
-import SmoothScrolling from '../components/smooth-scroll';
 import Script from 'next/script';
 
 const inter = Inter({
@@ -63,12 +61,12 @@ export default function RootLayout({
 				className={`${inter.variable} ${nacelle.variable} ${grotek.variable} bg-[#0B0C14] font-grotesk text-base text-gray-200 antialiased`}
 			>
 				{/* #00031a */}
-				<SmoothScrolling>
-					<div className='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'>
-						<Header />
-						{children}
-					</div>
-				</SmoothScrolling>
+				{/* <SmoothScrolling> */}
+				<div className='flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip'>
+					<Header />
+					{children}
+				</div>
+				{/* </SmoothScrolling> */}
 				<Script
 					id='voiceflow-chat-widget'
 					type='text/javascript'

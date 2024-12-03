@@ -25,7 +25,7 @@ export default function Header() {
 					id='collapseMenu'
 					className={`bg-[#0a0d1fcc] md:bg-transparent h-[calc(100vh-70px)] duration-500 absolute md:static md:w-auto w-full md:h-auto flex md:items-center gap-[1.5vw] top-[100%] ${
 						isMenuOpen ? 'left-[0%]' : 'left-[-100%]'
-					} px-5 md:py-0 py-5 backdrop-blur-[12px]`}
+					} px-5 md:py-0 py-5`}
 				>
 					<ul className='lg:flex gap-x-10 w-full'>
 						<li className='max-lg:py-3 px-3'>

@@ -79,7 +79,7 @@ export const HeroParallax = ({
 						/>
 					))}
 				</motion.div>
-				<motion.div className='flex flex-row  md:mb-20 mb-10 md:space-x-20 space-x-10 '>
+				<motion.div className='flex flex-row md:mb-20 mb-10 md:space-x-20 space-x-10'>
 					{secondRow.map((product) => (
 						<ProductCard
 							product={product}
@@ -156,7 +156,7 @@ export const ProductCard = ({
 				y: -20,
 			}}
 			key={product.title}
-			className='group/product lg:h-96 lg:w-[30rem] h-[18rem] w-[24rem] relative flex-shrink-0'
+			className='group/product lg:h-96 lg:w-[30rem] h-[18rem] w-[24rem] relative flex-shrink-0 md:ml-20'
 		>
 			<Link
 				href={product.link}
