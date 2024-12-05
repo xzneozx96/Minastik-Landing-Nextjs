@@ -1,9 +1,9 @@
 export default function Cta() {
 	return (
-		<section className='relative overflow-hidden'>
+		<section className='relative'>
 			<div className='mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8'>
 				<div
-					className='relative isolate overflow-hidden px-6 py-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 md:pb-0 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 rounded-2xl'
+					className='relative isolate px-6 py-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 md:pb-0 lg:flex lg:gap-x-10 lg:px-24 lg:pt-0 rounded-2xl'
 					data-aos='zoom-in-up'
 				>
 					<div className='mx-auto max-w-lg text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left z-10'>
@@ -51,6 +51,9 @@ export default function Cta() {
 						</div>
 					</div>
 
+					{/* blur background */}
+					<div className='absolute top-1/2 left-1/2 gradient-blur w-[85%] -translate-x-1/2 h-[85%] -translate-y-1/2 inset-0 blur-[5rem]'></div>
+
 					{/* Always visible video */}
 					<div className='absolute top-0 left-0 right-0 bottom-0 md:z-0 z-[-1]'>
 						<video
@@ -59,7 +62,7 @@ export default function Cta() {
 							muted
 							loop
 							playsInline
-							className='md:h-auto md:object-none h-full object-cover'
+							className='md:object-none h-full w-full object-cover rounded-lg lg:rounded-2xl'
 						></video>
 					</div>
 
